@@ -1,0 +1,81 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Getting Started Guide for the Workshop Kotlin Multiplatform</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid="???"
+                  id="getting-started-codelab-kmp"
+                  title="Getting Started Guide for the Workshop Kotlin Multiplatform"
+                  environment="web"
+                  feedback-link="https://github.com/RobinCaroff/workshop-kmp">
+    
+      <google-codelab-step label="Environment Setup" duration="5">
+        <p>You need <a href="https://developer.android.com/studio/" target="_blank">Android Studio</a> 3.4+ for the Android part of the tutorial.</p>
+<aside class="warning"><p>⚠️ Kotlin MPP is broken with 3.5.1. Please update to 3.5.3+ ⚠️</p>
+</aside>
+<aside class="special"><p>You can also use <a href="https://jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a> Community or Ultimate edition.</p>
+</aside>
+<p>The Kotlin plugin 1.3.41 or higher should be installed in the IDE. This can be verified via Language &amp; Frameworks | Kotlin Updates section in the Settings (or Preferences) window.</p>
+<p>Optionnal for mac user : For the iOS part of the tutorial, you need a macOS 10.14+ host with Xcode 10.3+ and the tools installed and configured.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Initialize the project" duration="5">
+        <h2 is-upgraded>Let&#39;s check that everything is well configured !</h2>
+<p>Clone the workshop project repository :</p>
+<pre><code>git clone https://github.com/mlumeau/workshop-kmp.git
+</code></pre>
+<p>Checkout the branch <code>step_one_setup</code> :</p>
+<pre><code>cd workshop-kmp
+git checkout step_one_setup
+</code></pre>
+<p>This project contain an Android app, a library and an iOS project.</p>
+<h2 is-upgraded>Launch the Android Studio IDE and open the project.</h2>
+<p>The project should sync and you should be able to compile and run the Android application on an emulator or a real device.</p>
+<h2 is-upgraded>Let&#39;s check that it works!</h2>
+<p>You should see a blank screen : <img alt="image_caption" src="img/6adc87008ad3b6f0.png"></p>
+<aside class="special"><p>You are ready to enjoy the android part of the workshop !</p>
+</aside>
+<h2 is-upgraded>For Mac users only (optionnal) :</h2>
+<p>First you have to prepare the framework for iOS</p>
+<pre><code>./gradlew :kore:packForXCode 
+</code></pre>
+<p>It creates the directory <code>kore/build/xcode-frameworks</code> which contains a gradlew executable and the framework for Xcode.</p>
+<h2 is-upgraded>Now you can open the project in Xcode</h2>
+<p>by opening the workspace file : <code>../workshop-kmp/iosApp/kosmos/kosmos.xcworkspace</code></p>
+<p>You can now compile and run the project on an iOS emulator or on a real device.</p>
+<p>You should see a blank screen : <img alt="image_caption" src="img/56d554d56953538c.png"></p>
+<aside class="special"><p>You are ready to enjoy the complete workshop (Android + iOS) !</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>

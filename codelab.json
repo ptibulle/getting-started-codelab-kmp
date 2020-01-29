@@ -1,0 +1,26 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-01-29T11:37:16+01:00",
+  "id": "getting-started-codelab-kmp",
+  "duration": 10,
+  "title": "Getting Started Guide for the Workshop Kotlin Multiplatform",
+  "summary": "Kotlin Multiplatform Workshop Getting Started Guide",
+  "source": "workshop-kmp/getting_started_guide.md",
+  "theme": "",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "codelab",
+    "kotlin"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "https://github.com/RobinCaroff/workshop-kmp",
+  "ga": "???",
+  "url": "getting-started-codelab-kmp"
+}
